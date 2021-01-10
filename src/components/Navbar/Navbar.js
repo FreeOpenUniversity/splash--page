@@ -2,32 +2,26 @@ import React, { Component } from 'react'
 import {MenuItems } from './MenuItems'
 import './Navbar.css'
 
-class Navbar extends Component {
+const Navbar = () => {
 
-    state = { clicked: false}
-    render() {
         return (
         <div>
-            <nav className="NavbarItems">
-                <h1 className="navbar-logo">Splash Page</h1>
-                <div>
+            <nav class="navbar">
+                <h1>
+                    <a href="index.html"><i class="fas fa-code"></i> DevConnector</a>
+                </h1>
+                <ul>
+                    <li><a href="profiles.html">Products</a></li>
+                    <li><a href="register.html">Technologies</a></li>
+                    <li><a href="login.html">Teams</a></li>
+                    <li><a class="btn" href="login.html">Subscribe</a></li>
 
-                </div>
-
-                <ul className="menuItem">
-                    {MenuItems.map((item,index) => {
-                        return(
-                            <li key={index}><a  href={item.url}> {item.title} </a></li>
-                        )
-                    })
-                }
-                    <li><a href="#" className="btn">Click me</a></li>
                 </ul>
             </nav>
         </div>
         
         ) 
-    }
+    
 }
 
 

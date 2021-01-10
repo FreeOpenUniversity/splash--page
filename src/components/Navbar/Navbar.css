@@ -1,36 +1,49 @@
-.NavbarItems {
-  background-color: rgb(219, 231, 246);
-  height: 80px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 1.2em;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.navbar-logo {
-  color: rgb(140, 25, 248);
-  margin-left: 20px;
+a {
+  color: rgb(127, 127, 248);
+  text-decoration: none;
 }
 
-.menuItem {
-  display: flex;
-  justify-content: space-around;
-  width: 40%;
-}
-
-.menuItem li {
+ul {
   list-style: none;
 }
-.menuItem a {
-  text-decoration: none;
-  letter-spacing: 3px;
-  font-weight: bold;
-  color: rgb(140, 25, 248);
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  padding: 0.45rem;
+  margin: 0 0.25rem;
+}
+
+.navbar a:hover {
+  color: orange;
+}
+
+.navbar .welcome span {
+  margin-right: 0.6rem;
 }
 
 .btn {
-  background-color: rgb(140, 25, 248);
-  color: white;
   border-radius: 2px;
-  padding: 8px 20px;
+  padding: 8px 12px;
+  background: blue;
+  color: white;
 }
