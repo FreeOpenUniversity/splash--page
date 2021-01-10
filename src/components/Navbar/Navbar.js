@@ -1,33 +1,25 @@
 import React, { Component } from 'react'
-import {MenuItems } from './MenuItems'
-import './Navbar.css'
 
-class Navbar extends Component {
+const Navbar = () => {
 
-    state = { clicked: false}
-    render() {
         return (
-        <div>
-            <nav className="NavbarItems">
-                <h1 className="navbar-logo">Splash Page</h1>
-                <div>
+        <div className="">
+            <nav className="flex justify-between items-center ph5 fixed w-100 top-0 ">
+                <h1 className="">
+                    <a className="varela f3 no-underline black" href="index.html"> Colligate Independent Study</a>
+                </h1>
+                <ul className="flex no-underline items-center">
+                    <li className="list"><a className="ttu ph2 mh3 varela no-underline black" href="profiles.html">Products</a></li>
+                    <li className="list" ><a className="ttu varela no-underline black ph2 mh3" href="register.html">Technologies</a></li>
+                    <li className="list"><a className="ttu p2 mh3 varela no-underline black pr4" href="login.html">Teams</a></li>
+                    <button className="fw6 white ph4 br-pill pv2 f4 ttc bg-blue bw0 "> Contact</button>
 
-                </div>
-
-                <ul className="menuItem">
-                    {MenuItems.map((item,index) => {
-                        return(
-                            <li key={index}><a  href={item.url}> {item.title} </a></li>
-                        )
-                    })
-                }
-                    <li><a href="#" className="btn">Click me</a></li>
                 </ul>
             </nav>
         </div>
         
         ) 
-    }
+    
 }
 
 
