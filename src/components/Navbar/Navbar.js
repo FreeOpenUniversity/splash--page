@@ -19,7 +19,7 @@ const Navbar = () => {
                         <li className="list"><Link className="ttu ph2 mh3 varela no-underline black" to="/products">Products</Link></li>
                         <li className="list" ><Link className="ttu varela no-underline black ph2 mh3" to="/technologies">Technologies</Link></li>
                         <li className="list"><Link className="ttu p2 pr3 mh3 varela no-underline black" to="/teams">Teams</Link></li>
-                        <button className="fw6  white ph4 br-pill pv2 f4 ttc bg-blue bw0"><Link className="link "to="/contact">Contact</Link> </button>
+                        <button className="fw6 ph4 br-pill pv2 f4 ttc bg-blue bw0 "><Link className="link white "to="/contact">Contact</Link> </button>
 
                     </ul>
                 </nav>
